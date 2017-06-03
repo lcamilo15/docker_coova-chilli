@@ -1,7 +1,7 @@
-FROM ubuntu:15.04
+FROM lacarm/ubuntu
 MAINTAINER Sylvain Desbureaux <sylvain@desbureaux.fr>
 
-RUN apt-get update && apt-get install -y \
+RUN add-apt-repository universe && apt-get update && apt-get install -y \
   git \
   build-essential \
   libtool \
