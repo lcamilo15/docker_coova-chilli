@@ -1,7 +1,10 @@
 FROM lacarm/ubuntu
 MAINTAINER Luis Camilo <lcamilo15@gmail.com>
 
-RUN add-apt-repository universe && apt-get update && apt-get install -y \
+RUN apt-get install -y software-properties-common && \
+  add-apt-repository ppa:git-core/ppa && \
+  apt-get update && \ 
+  add-apt-repository universe && apt-get update && apt-get install -y \
   git \
   build-essential \
   libtool \
