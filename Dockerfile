@@ -1,5 +1,5 @@
 FROM lacarm/ubuntu
-MAINTAINER Sylvain Desbureaux <sylvain@desbureaux.fr>
+MAINTAINER Luis Camilo <lcamilo15@gmail.com>
 
 RUN add-apt-repository universe && apt-get update && apt-get install -y \
   git \
